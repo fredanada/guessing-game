@@ -5,6 +5,7 @@
 
     <!-- Bootstrap and CSS here-->
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
 
   </head>
   <body>
@@ -20,45 +21,46 @@
         <div id='main'>
           <div id='input-parent'>
             <!-- Player's guess input, and submit button -->
-            <input id="player-input" type="number" maxlength="3" autofocus=autofocus name="guess">
-            <button id='submit'>submit</button>
+            <input id="player-input" placeholder="your number" maxlength="3" autofocus=autofocus name="guess">
+            <button class = "btn btn-default" id='submit'>submit</button>
           </div>
 
           <div id='guesses'>
             <!-- unordered list of guesses -->
-            <ul id='list of guesses'>
-              <li class='guesses'>.</li>
-              <li class='guesses'>.</li>
-              <li class='guesses'>.</li>
-              <li class='guesses'>.</li>
+            <ul id='guess-list'>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
             </ul>
           </div>
 
           <div id="menu-btns">
             <!-- reset and hint buttons -->
-            <button id='reset'>reset</button>
-            <button id='hint'>hint</button>
+            <button id='reset' class = "btn btn-default">reset</button>
+            <button id='hint' class = "btn btn-default">hint</button>
           </div>
         </div>
       </div>
 
 
     <div id='footer' class='center'>
-        <div>
-          <div class='center'>
-            <img src='fullstack logo.png'></img>
-          </div>
-
-          <div class='center'>
-            <h4>Project by fdfdfdfdfd</h4>
-          </div>
-
-          <div class='center'>
-            <img src='gracehopper logo.png'></img>
-          </div>
-
-
+      <div class='row'>
+        <div class='col-md-4'>
+          <img src='fullstack logo.png'></img>
         </div>
+
+        <div class='col-md-4'>
+          <h4>project by freda</h4>
+        </div>
+
+        <div class='col-md-4'>
+          <img src='gracehopper logo.png'></img>
+        </div>
+
+
+      </div>
     </div>
 
   </body>
