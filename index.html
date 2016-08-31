@@ -1,66 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Guessing Game</title>
+    <title>the guessing game</title>
 
     <!-- Bootstrap and CSS here-->
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
 
   </head>
   <body>
 
-      <div id='app' class='center'>
+      <div id='app' class="center" class="container-fluid">
 
         <div id='headers'>
           <!-- Title and subtitles! -->
-          <h1>guessing game</h1>
+          <h1>the guessing game</h1>
           <h2>guess a number between 1-100</h2>
         </div>
 
         <div id='main'>
           <div id='input-parent'>
             <!-- Player's guess input, and submit button -->
-            <input id="player-input" placeholder="your number" maxlength="3" autofocus=autofocus name="guess">
-            <button class = "btn btn-default" id='submit'>submit</button>
+            <input id='player-input' placeholder="enter number" maxlength="3"></input>
+            <button id="submit">O K</button>
           </div>
 
           <div id='guesses'>
             <!-- unordered list of guesses -->
-            <ul id='guess-list'>
-              <li class='guess'>-</li>
-              <li class='guess'>-</li>
-              <li class='guess'>-</li>
-              <li class='guess'>-</li>
-              <li class='guess'>-</li>
+            <ul id="guess-list">
+              <li id="guess">-</li>
+              <li id="guess">-</li>
+              <li id="guess">-</li>
+              <li id="guess">-</li>
+              <li id="guess">-</li>
             </ul>
           </div>
 
           <div id="menu-btns">
             <!-- reset and hint buttons -->
-            <button id='reset' class = "btn btn-default">reset</button>
-            <button id='hint' class = "btn btn-default">hint</button>
+            <button id="reset" class="btn btn-default">reset</button>
+            <button id="hint" class="btn btn-default">hint</button>
           </div>
         </div>
       </div>
 
 
-    <div id='footer' class='center'>
-      <div class='row'>
-        <div class='col-md-4'>
-          <img src='fullstack logo.png'></img>
+    <div id='footer' class="center">
+        <div>
+          <div class='col-xs-4 col-md-4'>
+            <img src='fullstack logo.png'></img>
+          </div>
+
+          <div class='col-xs-4 col-md-4'>
+            <h4>Project by freda</h4>
+          </div>
+
+          <div class='col-xs-4 col-md-4'>
+            <img src='gracehopper logo.png'></img>
+          </div>
+
+
         </div>
-
-        <div class='col-md-4'>
-          <h4>project by freda</h4>
-        </div>
-
-        <div class='col-md-4'>
-          <img src='gracehopper logo.png'></img>
-        </div>
-
-
-      </div>
     </div>
 
   </body>
